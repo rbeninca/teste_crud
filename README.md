@@ -3,15 +3,16 @@ Banco de dados
 
 * Criar um arquivo banco.sql que cria a tabela alunos com os atributos descritos abaixo:
 
-tia  | nome | nota | idade |
------|------|------|-------|
+aluno_id |aluno_nome | aluno_endereco | aluno_telefone | **NOVO** |
+---------|-----------|----------------|----------------|----------|
 
 * Modificar a página index para que ela mostre uma página conforme o exemplo abaixo:
 
-Tia | Nome | Nota | Idade | **NOVO** |
-----|------|------|-------|----------|
-123 | Joao | 10   | 23    | **E** **X** |
-456 | Maria | 10   | 23    | **E** **X** |
+aluno_id |aluno_nome | aluno_endereco | aluno_telefone | **NOVO** |
+---------|-----------|----------------|----------------|----------|
+1        |João       |Rua Ernesto     |47 3202-2020    |
+2        |Romulo     |Rua Valdomiro   |48 3993-2920    |
+
 
 Onde **NOVO** é um link para a página `crud.php?tipo_crud=C`
 **E** é um link para a página `crud.php?tipo_crud=U&tia=XXX` onde XXX é o tia do aluno da linha, no caso do Joao, o link seria `crud.php?tipo_crud=U&tia=123`
